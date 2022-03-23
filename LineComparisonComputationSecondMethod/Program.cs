@@ -64,8 +64,24 @@ namespace LineComparisonComputationSecondMethod
 
             Console.Write("\n\nFirst Line is Equal To Second Line : ");
             Console.WriteLine(lineLength1.Equals(lineLength2));
-            
+
+            int result = lineLength1.CompareTo(lineLength2);
+
+            Console.WriteLine($"\n\nLength of First Line: {lineLength1}");
+            Console.WriteLine($"Length of Second Line: {lineLength2}");
+
+            if (result > 0)
+                Console.WriteLine($"\n So First line is greater than Second line");
+
+            else if (result < 0)
+                Console.WriteLine($"\n So First line is less than Second line");
+
+            else
+                Console.WriteLine($"\nSo First Line and Second Line Both are Equal");
+
             Console.ReadLine();
+
+
         }
     }
 }
